@@ -1,0 +1,32 @@
+\section{A - Factorise N+M}
+Pak Chanek has a prime number n. Find a prime number m such that n+m is not prime.
+
+\subsection{Solution}
+
+\begin{lstlisting}
+int main() {
+	int t; cin >> t;
+	while(t--) {
+		long long n; cin >> n;
+		cout << n << endl;
+	}
+
+	return 0;
+}
+\end{lstlisting}
+
+\section{B - Jumbo Extra Cheese 2}
+Pak Chanek has $n$ two-dimensional slices of cheese. 
+The $i$-th slice of cheese can be represented as a rectangle of dimensions 
+$a_i \times b_i$
+We want to arrange them on the two-dimensional plane such that:
+\begin{itemize}
+	\item Each edge of each cheese is parallel to either the x-axis or the
+		y-axis.
+	\item The bottom edge of each cheese is a segment of the x-axis.
+	\item No two slices of cheese overlap, but their sides can touch.
+	\item They form one connected shape.
+\end{itemize}
+Note that we can arrange them in any order (the leftmost slice of cheese is not necessarily the first slice of cheese). Also note that we can rotate each slice of cheese in any way as long as all conditions still hold.
+
+Find the minimum possible perimeter of the constructed shape.
